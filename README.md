@@ -65,7 +65,6 @@ colcon build
 ### Terminal 2 — Launch Gazebo simulation
 
 ```bash 
-cd ~/robot_ws
 . install/setup.bash
 ros2 launch robot_description gazebo.launch.py
 ```
@@ -75,7 +74,6 @@ ros2 launch robot_description gazebo.launch.py
 ### Terminal 3 — Launch controller
 
 ```bash 
-cd ~/robot_ws
 . install/setup.bash
 ros2 launch robot_controller controller.launch.py
 ```
@@ -85,7 +83,6 @@ ros2 launch robot_controller controller.launch.py
 ### Terminal 4 — Send velocity command
 
 ```bash 
-cd ~/robot_ws
 . install/setup.bash
 ros2 topic pub /cmd_vel geometry_msgs/msg/TwistStamped "{twist: {linear: {x: 0.5}, angular: {z: 0.5}}}"
 ```
