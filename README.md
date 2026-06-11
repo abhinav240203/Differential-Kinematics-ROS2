@@ -48,34 +48,48 @@ This node performs the following:
 
 ## Terminal Commands
 
+Here are your **terminal-wise CLI commands**:
+
+---
+
 ### Terminal 1 — Build workspace
 
-cd ~/robot_ws  
-colcon build  
-. install/setup.bash  
+```bash 
+cd ~/robot_ws
+colcon build
+. install/setup.bash
+```
 
 ---
 
 ### Terminal 2 — Launch Gazebo simulation
 
-. install/setup.bash  
-ros2 launch robot_description gazebo.launch.py  
+```bash 
+cd ~/robot_ws
+. install/setup.bash
+ros2 launch robot_description gazebo.launch.py
+```
 
 ---
 
 ### Terminal 3 — Launch controller
 
-. install/setup.bash  
-ros2 launch robot_controller controller.launch.py  
+```bash 
+cd ~/robot_ws
+. install/setup.bash
+ros2 launch robot_controller controller.launch.py
+```
 
 ---
 
-### Terminal 4 — Publish velocity command
+### Terminal 4 — Send velocity command
 
-. install/setup.bash  
+```bash 
+cd ~/robot_ws
+. install/setup.bash
 ros2 topic pub /cmd_vel geometry_msgs/msg/TwistStamped "{twist: {linear: {x: 0.5}, angular: {z: 0.5}}}"
+```
 
----
 
 ## Conclusion
 
