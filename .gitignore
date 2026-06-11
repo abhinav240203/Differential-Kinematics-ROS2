@@ -1,0 +1,20 @@
+# Ignore everything
+*
+
+# Keep .gitignore
+!.gitignore
+
+# Keep src directory
+!src/
+
+# Keep robot_controller
+!src/robot_controller/
+!src/robot_controller/**
+
+# Keep robot_description
+!src/robot_description/
+!src/robot_description/**
+
+# Keep videos
+!videos/
+!videos/**
