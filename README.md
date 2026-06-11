@@ -57,7 +57,6 @@ Here are your **terminal-wise CLI commands**:
 ```bash 
 cd ~/robot_ws
 colcon build
-. install/setup.bash
 ```
 
 ---
